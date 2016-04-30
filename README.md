@@ -1,0 +1,1 @@
+# angularjs-dynamic-module-register
