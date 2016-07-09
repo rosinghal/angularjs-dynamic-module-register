@@ -2,10 +2,10 @@
   'use strict';
 
   angular
-    .module('module')
+    .module('module1')
     .run(run)
     .config(config)
-    .controller(ModuleController);
+    .controller('ModuleController', ModuleController);
 
   function config() {
     console.log('hurray1');
