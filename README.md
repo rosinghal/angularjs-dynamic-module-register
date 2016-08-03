@@ -3,7 +3,7 @@ Ever wondered, if you can insert module into AngularJS application where you don
 
 This repository solves that problem. All you have to do is paste your module's javscript files and insert them in html files (or it can be done using grunt task) and you are good to go.
 
-You have follow this syntax, while initializing the module.
+You have to follow this syntax, while initializing the module.
 
 ```
 (function (app) {
@@ -14,3 +14,14 @@ You have follow this syntax, while initializing the module.
 ```
 
 Here replace 'modulename' with name of your module.
+
+To whether a module is present in HTML use this
+
+```
+ng-if="$root.checkModule('modulename')"
+```
+
+and use this to check in controller, service or anywhere in angular where you have access to $rootScope
+```
+$rootScope.checkModule('modulename')
+```
