@@ -15,7 +15,7 @@ You have to follow this syntax, while initializing the module.
 
 Here replace 'modulename' with name of your module.
 
-To whether a module is present in HTML use this
+To check whether a module is present in HTML use this
 
 ```
 ng-if="$root.checkModule('modulename')"
