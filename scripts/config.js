@@ -1,11 +1,11 @@
 (function (window) {
   'use strict';
 
-  var applicationModuleName = 'mean';
+  var applicationModuleName = 'dynamic';
 
   var service = {
     applicationModuleName: applicationModuleName,
-    applicationModuleVendorDependencies: [],
+    applicationModuleVendorDependencies: ['ui.router'],
     registerModule: registerModule
   };
 
