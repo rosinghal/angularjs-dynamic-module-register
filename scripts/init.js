@@ -11,7 +11,7 @@
 
   function run($rootScope) {
     $rootScope.checkModule = function(module) {
-      try { angular.module(module); console.log(1);return true; } catch(err) { console.log(2);return false; }
+      try { angular.module(module); return true; } catch(err) { return false; }
     }
   }
 
